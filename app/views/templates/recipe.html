@@ -1,0 +1,79 @@
+<div id="recipe-title" ng-class="{'longtitle': recipe.longTitle}"><div class="wrap"><a href="/farmvillecookbook-main/{{recipe.categoryId}}"><img src="/farmvillecookbook-main/public/images/back.png" /></a></div>{{recipe.title}}</div>
+
+<div class="wrap">
+    
+    <div id="recipe-gallery">
+        <div recipegallery></div>
+        <div id="recipe-time">
+            <div><span>Cook Time:</span> {{recipe.cooktime}}</div>
+            <div><span>Serves:</span> {{recipe.serves}}</div>
+        </div>
+        
+        <!-- DESKTOP -->
+        <div id="recipe-writer" ng-hide="recipe.hidewriter == true" ng-class="{'biopic':  recipe.biopic != undefined}">
+            <img id="biopic" ng-if="recipe.biopic != undefined" ng-src="/farmvillecookbook-main/public/images/authors/{{recipe.biopic}}" />
+            <div class="by">
+                Recipe by
+            </div>
+            <div class="writer">
+                {{recipe.writer}}
+            </div>
+            <div class="bio">
+                <span ng-bind-html="recipe.bio"></span><span ng-show="recipe.showLink.length > 0 && recipe.bio.length > 0">,</span> <a href="{{recipe.showLink}}" target="_blank">{{recipe.showTitle}}</a>
+            </div>
+        </div>
+        <!-- MOBILE -->
+        <div id="recipe-details-mobile">
+            <div class="recipe-writer">
+                Recipe by {{recipe.writer}}<span ng-show="recipe.showLink.length > 0">,</span> <a href="{{recipe.showLink}}" target="_blank">{{recipe.showTitle}}</a>
+            </div>
+            <div class="recipe-time">
+                <span>Cook Time:</span> {{recipe.cooktime}}, <span>Serves:</span> {{recipe.serves}}
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+
+<div id="recipe-subtitle" ng-if="ismobile != true && recipe.subtitle == true">
+    Proceeds from <a href="http://www.hudsonbellamywines.com/" target="_blank">Hudson Bellamy Wines</a> benefit <a href='http://thehawnfoundation.org/' target="_blank">The Hawn Foundation</a>
+</div>
+
+
+<div class="wrap">
+    <div id="recipe-text">
+        <div id="directions">
+            <div id="thedirections" directions></div>
+            <div id="shareme">
+                <h6>Share this recipe</h6>
+                <ul id="social">
+                    <li><a class="fb"></a></li>
+                    <li><a class="twitter"></a></li>
+                
+                    <li><a class="pinterest"></a></li>
+                    <li><a class="email"></a></li>
+                </ul>
+                <a onclick="window.print();" id="printbtn" ng-if="ismobile == false"><img src="/farmvillecookbook-main/public/images/print.jpg"></a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<div id="print">
+    <h6 id="printTitle">{{recipe.title}}</h6>
+    <img id="printlogo" src="/farmvillecookbook-main/public/images/print_logo.jpg" />
+    <img id="hero" ng-src="/farmvillecookbook-main/public/images/recipes/{{recipe.id}}/thumb1.jpg" />
+    <div id="text">
+        <div id="text-inner">
+            <div><span>Submitted By:</span> {{recipe.writer}}</div>
+            <div><span>Section:</span> {{category.categoryName}}</div>
+            <div><span>Cook Time:</span> {{recipe.cooktime}}</div>
+            <div><span>Serves:</span> {{recipe.serves}}</div>
+        </div>
+        
+    </div>
+    <div id="printdirections" directions></div>
+</div>

@@ -1,0 +1,573 @@
+@font-face {
+  font-family: 'masala_otbold';
+  src: url('fonts/fontfont_-_masalaot-bold.eot');
+  src: url('fonts/fontfont_-_masalaot-bold.eot?#iefix') format('embedded-opentype'), url('fonts/fontfont_-_masalaot-bold.woff2') format('woff2'), url('fonts/fontfont_-_masalaot-bold.woff') format('woff'), url('fonts/fontfont_-_masalaot-bold.ttf') format('truetype'), url('fonts/fontfont_-_masalaot-bold.svg#masala_otbold') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+header {
+  background: url('/farmvillecookbook-main/public/images/bg-header.jpg') top center;
+  background-size: 100% 100%;
+  display: block;
+  height: 169px;
+  box-shadow: 1px 0 20px 0 #828282; }
+  @media screen and (max-width: 667px) {
+    header {
+      width: 100%;
+      height: 122px; } }
+  header img#logo {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 10; }
+    @media screen and (max-width: 667px) {
+      header img#logo {
+        width: 300px; } }
+  header #follow-wrap {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative; }
+    @media screen and (max-width: 667px) {
+      header #follow-wrap {
+        width: 100%; } }
+    header #follow-wrap ul#follow {
+      position: absolute;
+      top: 125px;
+      right: 0;
+      z-index: 99; }
+      @media screen and (max-width: 667px) {
+        header #follow-wrap ul#follow {
+          right: 5px;
+          top: 8px;
+          -webkit-transform: 0;
+              -ms-transform: 0;
+                  transform: 0;
+          left: auto;
+          margin-left: 0; } }
+      header #follow-wrap ul#follow li {
+        float: left; }
+        @media screen and (max-width: 667px) {
+          header #follow-wrap ul#follow li img {
+            width: 18px; } }
+
+.wrap {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative; }
+  @media screen and (max-width: 667px) {
+    .wrap {
+      width: 100%;
+      overflow: visible; } }
+  .wrap #hero {
+    position: relative;
+    width: 1180px;
+    overflow: hidden;
+    margin-bottom: 30px; }
+    @media screen and (max-width: 667px) {
+      .wrap #hero {
+        width: 100%;
+        margin-bottom: 5px; } }
+    .wrap #hero:hover {
+      opacity: 0.8; }
+    .wrap #hero img {
+      display: block;
+      margin: 0 auto;
+      width: 100%; }
+      @media screen and (max-width: 667px) {
+        .wrap #hero img {
+          width: 100%; } }
+
+#recipe-title {
+  background-color: rgba(110, 155, 67, 0.83);
+  color: #fff;
+  height: 73px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-family: 'Helvetica';
+  font-weight: bold;
+  font-size: 43px;
+  line-height: 71px;
+  z-index: 1;
+  overflow: hidden; }
+  #recipe-title.longtitle {
+    font-size: 33px; }
+    @media screen and (max-width: 667px) {
+      #recipe-title.longtitle {
+        font-size: 10px; } }
+  #recipe-title.recipesPage {
+    margin-bottom: 7px; }
+  @media screen and (max-width: 667px) {
+    #recipe-title {
+      height: 30px;
+      line-height: 30px;
+      font-size: 14px;
+      font-weight: normal;
+      padding: 1px;
+      position: relative; } }
+  #recipe-title a {
+    position: absolute;
+    left: 20px; }
+    @media screen and (max-width: 667px) {
+      #recipe-title a {
+        left: 1px;
+        top: 3px; } }
+    @media screen and (max-width: 667px) {
+      #recipe-title a img {
+        width: 35px; } }
+
+#recipe-subtitle {
+  font-family: 'masala_otbold';
+  text-align: center;
+  background: #6e9b43;
+  height: 44px;
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 44px; }
+  @media screen and (max-width: 667px) {
+    #recipe-subtitle {
+      width: 1200px; } }
+  #recipe-subtitle a {
+    color: #bbe7f6;
+    text-decoration: none; }
+  #recipe-subtitle.marc-subtitle {
+    font-size: 18px;
+    height: 100px; }
+
+#categories {
+  font-family: 'masala_otbold'; }
+  #categories li {
+    float: left;
+    text-align: center;
+    margin: 0 5px 30px 0;
+    color: #6e9b43;
+    font-size: 20px;
+    width: 388px;
+    height: 305px; }
+    @media screen and (max-width: 667px) {
+      #categories li {
+        width: auto;
+        height: auto; } }
+    #categories li.last {
+      margin-right: 0; }
+      @media screen and (max-width: 667px) {
+        #categories li.last {
+          margin-right: 5px; } }
+    @media screen and (max-width: 667px) {
+      #categories li {
+        float: none;
+        margin: 0 5px 5px 5px; } }
+    #categories li h6 {
+      letter-spacing: 1px; }
+      @media screen and (min-width: 668px) {
+        #categories li h6 {
+          padding-top: 3px;
+          line-height: 18px; } }
+      @media screen and (max-width: 667px) {
+        #categories li h6 {
+          background: #74a347;
+          color: #fff;
+          font-weight: normal;
+          font-family: Helvetica;
+          font-size: 14px;
+          padding: 4px; } }
+    #categories li a {
+      color: #6e9b43;
+      text-decoration: none; }
+    #categories li img {
+      vertical-align: bottom; }
+      @media screen and (max-width: 667px) {
+        #categories li img {
+          width: 100%; } }
+    #categories li div.thumb-gallery {
+      position: relative;
+      text-align: left;
+      height: 290px;
+      width: 388px; }
+      #categories li div.thumb-gallery img {
+        position: absolute; }
+  #categories.homePage h6 {
+    padding-top: 6px; }
+
+#recipe-gallery {
+  position: relative; }
+  #recipe-gallery #slideshow-wrap {
+    width: 1199px;
+    height: 539px !important;
+    overflow: hidden;
+    position: relative; }
+    @media screen and (max-width: 667px) {
+      #recipe-gallery #slideshow-wrap {
+        height: auto !important;
+        width: 100% !important; } }
+    #recipe-gallery #slideshow-wrap ul li {
+      list-style: none;
+      float: left; }
+      @media screen and (max-width: 667px) {
+        #recipe-gallery #slideshow-wrap ul li {
+          width: auto; } }
+      @media screen and (max-width: 667px) {
+        #recipe-gallery #slideshow-wrap ul li img {
+          width: 100% !important; } }
+    #recipe-gallery #slideshow-wrap ol.dots {
+      position: absolute;
+      bottom: 20px;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      left: 50%; }
+      @media screen and (max-width: 667px) {
+        #recipe-gallery #slideshow-wrap ol.dots {
+          bottom: 8px; } }
+      #recipe-gallery #slideshow-wrap ol.dots li.dot {
+        float: left;
+        margin: 0 5px;
+        background: url('/farmvillecookbook-main/public/images/dots.png') no-repeat;
+        width: 18px;
+        background-position: -18px 0;
+        text-indent: 9999em; }
+        #recipe-gallery #slideshow-wrap ol.dots li.dot.active {
+          background-position: 0 0; }
+  #recipe-gallery #recipe-details-mobile {
+    display: none; }
+    @media screen and (max-width: 667px) {
+      #recipe-gallery #recipe-details-mobile {
+        display: block;
+        margin-top: -3px; }
+        #recipe-gallery #recipe-details-mobile .recipe-writer {
+          font-family: Helvetica;
+          background: url('/farmvillecookbook-main/public/images/writer.jpg');
+          text-align: center;
+          color: #fff;
+          padding: 5px;
+          font-size: 15px; }
+          #recipe-gallery #recipe-details-mobile .recipe-writer a {
+            color: #bbe7f6;
+            text-decoration: none; }
+        #recipe-gallery #recipe-details-mobile .recipe-time {
+          font-family: Helvetica;
+          padding: 10px;
+          text-align: center;
+          font-size: 15px; }
+          #recipe-gallery #recipe-details-mobile .recipe-time div {
+            width: 50%;
+            float: left; }
+          #recipe-gallery #recipe-details-mobile .recipe-time span {
+            color: #b2c964; } }
+  #recipe-gallery #recipe-time {
+    background: #64913e;
+    padding: 0 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    color: #fff;
+    font-family: Helvetica;
+    font-size: 14px; }
+    @media screen and (max-width: 667px) {
+      #recipe-gallery #recipe-time {
+        display: none; } }
+    #recipe-gallery #recipe-time span {
+      color: #b2c964; }
+    #recipe-gallery #recipe-time div {
+      display: block;
+      margin: 18px 0; }
+  #recipe-gallery #recipe-writer {
+    font-family: Helvetica;
+    background: url('/farmvillecookbook-main/public/images/writer.jpg');
+    text-align: center;
+    color: #fff;
+    min-width: 309px;
+    padding: 8px;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    font-weight: 100; }
+    @media screen and (max-width: 667px) {
+      #recipe-gallery #recipe-writer {
+        display: none; } }
+    #recipe-gallery #recipe-writer.biopic .by, #recipe-gallery #recipe-writer.biopic .writer, #recipe-gallery #recipe-writer.biopic .bio {
+      text-align: left; }
+    #recipe-gallery #recipe-writer.biopic .by {
+      margin-top: 12px; }
+    #recipe-gallery #recipe-writer.biopic .bio {
+      font-size: 14px; }
+    #recipe-gallery #recipe-writer img#biopic {
+      float: left;
+      margin-right: 5px; }
+    #recipe-gallery #recipe-writer div {
+      display: block;
+      margin: 3px 0; }
+    #recipe-gallery #recipe-writer .writer {
+      font-size: 20px;
+      margin: 6px 0; }
+    #recipe-gallery #recipe-writer a {
+      color: #bbe7f6;
+      text-decoration: none; }
+    #recipe-gallery #recipe-writer.profile-pic {
+      text-align: left; }
+      #recipe-gallery #recipe-writer.profile-pic.marc .by {
+        margin-top: 7px; }
+      #recipe-gallery #recipe-writer.profile-pic .by {
+        margin-top: 13px; }
+      #recipe-gallery #recipe-writer.profile-pic .bio {
+        font-size: 80%; }
+      #recipe-gallery #recipe-writer.profile-pic img {
+        float: left;
+        margin-right: 5px;
+        width: 94px; }
+
+#directions {
+  position: relative;
+  margin: 35px 15px 60px 15px;
+  font-family: Helvetica;
+  color: #6d6d6d;
+  line-height: 25px; }
+  @media screen and (max-width: 667px) {
+    #directions {
+      margin: 0; } }
+  @media screen and (max-width: 667px) {
+    #directions img {
+      width: 100%; } }
+  #directions h6 {
+    font-family: 'masala_otbold';
+    color: #7eaa55;
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 100%; }
+    @media screen and (max-width: 667px) {
+      #directions h6 {
+        background: #7eaa55;
+        color: #fff;
+        padding: 3px 0 3px 0;
+        width: 97%;
+        padding-left: 3%;
+        text-transform: capitalize;
+        font-size: 12px;
+        font-family: Helvetica; } }
+  @media screen and (max-width: 667px) {
+    #directions ul {
+      margin-left: 10px; } }
+  #directions aside {
+    float: left;
+    width: 375px; }
+    @media screen and (min-width: 668px) {
+      #directions aside {
+        margin-right: 50px; } }
+    @media screen and (max-width: 667px) {
+      #directions aside {
+        float: none;
+        width: auto;
+        margin-bottom: 20px;
+        font-size: 12px; } }
+    #directions aside h5 {
+      font-weight: bold;
+      margin: 15px 0 5px 8px; }
+  #directions article {
+    float: left;
+    width: 770px; }
+    @media screen and (min-width: 668px) {
+      #directions article {
+        width: 720px; } }
+    @media screen and (max-width: 667px) {
+      #directions article {
+        float: none;
+        font-size: 12px;
+        width: 100%; } }
+    #directions article ol {
+      margin-left: 24px; }
+      @media screen and (max-width: 667px) {
+        #directions article ol {
+          margin-right: 24px; } }
+      #directions article ol li {
+        list-style-type: decimal; }
+    #directions article h5 {
+      font-weight: bold;
+      margin: 15px 0 5px 8px; }
+
+#shareme {
+  clear: both;
+  padding-top: 30px;
+  padding-right: 20px;
+  position: relative;
+  height: 75px; }
+  #shareme h6 {
+    margin-bottom: 7px; }
+    @media screen and (max-width: 667px) {
+      #shareme h6 {
+        color: #6e9b43;
+        background: #fff;
+        text-align: right;
+        margin-right: 3%;
+        font-size: 14px;
+        font-weight: bold; } }
+  #shareme #printbtn {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    cursor: pointer; }
+  @media screen and (max-width: 667px) {
+    #shareme #social {
+      position: absolute;
+      right: 10px; } }
+  #shareme #social li {
+    float: left;
+    cursor: pointer;
+    margin-right: 10px; }
+    #shareme #social li a {
+      background: url('/farmvillecookbook-main/public/images/social.jpg') no-repeat;
+      height: 26px;
+      width: 26px;
+      display: block; }
+      #shareme #social li a.twitter {
+        background-position: -38px 0;
+        width: 29px; }
+      #shareme #social li a.instagram {
+        background-position: -75px 0; }
+      #shareme #social li a.pinterest {
+        background-position: -112px 0; }
+      #shareme #social li a.email {
+        background-position: -149px 0;
+        width: 33px; }
+
+footer {
+  clear: both;
+  font-family: 'masala_otbold'; }
+  @media screen and (max-width: 667px) {
+    footer {
+      width: 100%; } }
+  footer #play-on-fb {
+    background: #e5e5e5;
+    height: 83px;
+    text-align: center;
+    color: #6b6c6c;
+    line-height: 87px;
+    font-size: 30px; }
+    @media screen and (max-width: 667px) {
+      footer #play-on-fb {
+        display: none; } }
+    footer #play-on-fb a {
+      color: #6e9b43;
+      text-decoration: none; }
+  footer #play-mobile {
+    height: 120px;
+    background: url('/farmvillecookbook-main/public/images/footer/play-mobile.jpg') #bbe7f6 center bottom no-repeat;
+    position: relative; }
+    @media screen and (max-width: 667px) {
+      footer #play-mobile {
+        background: url('/farmvillecookbook-main/public/images/footer/bg-mobile.png') #bbe7f6 center top no-repeat;
+        background-size: cover; } }
+    footer #play-mobile ul {
+      position: absolute;
+      top: 67px;
+      width: 342px;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      left: 50%;
+      margin-left: 342px; }
+      @media screen and (max-width: 667px) {
+        footer #play-mobile ul {
+          top: 82px;
+          margin-left: 0;
+          width: 248px; } }
+      footer #play-mobile ul li {
+        float: left;
+        margin-right: 5px; }
+        @media screen and (max-width: 667px) {
+          footer #play-mobile ul li img {
+            height: 25px; }
+ }
+  footer #bottom-logo {
+    background: url('/farmvillecookbook-main/public/images/footer/grey.jpg');
+    height: 64px;
+    position: relative; }
+    @media screen and (max-width: 667px) {
+      footer #bottom-logo {
+        font-size: 12px;
+        height: 39px; } }
+    footer #bottom-logo img#zynga {
+      position: absolute;
+      top: 11px;
+      left: 0; }
+      @media screen and (max-width: 667px) {
+        footer #bottom-logo img#zynga {
+          width: 80px;
+          top: 7px;
+          left: 14px; } }
+    footer #bottom-logo #privacy {
+      position: absolute;
+      right: 0;
+      top: 25px; }
+      @media screen and (max-width: 667px) {
+        footer #bottom-logo #privacy {
+          right: 12px;
+          top: 16px; } }
+      footer #bottom-logo #privacy a {
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        margin-left: 20px; }
+
+@media print {
+  header, footer, .wrap, #recipe-title {
+    display: none; }
+ }
+
+#print {
+  display: none; }
+  @media print {
+    #print {
+      display: block;
+      position: absolute;
+      font-family: Helvetica; }
+      #print header, #print footer {
+        display: none; }
+      #print #printTitle {
+        margin-bottom: 35px; }
+      #print h6 {
+        color: #6e9b43;
+        font-size: 20px;
+        font-weight: bold; }
+      #print h5 {
+        margin: 10px 0 5px;
+        font-weight: bolder; }
+      #print img#hero {
+        float: left;
+        width: 350px;
+        margin-right: 20px; }
+      #print img#printlogo {
+        position: absolute;
+        top: 0;
+        right: 0; }
+      #print #text {
+        float: left;
+        height: 262px;
+        position: relative;
+        width: 225px; }
+        #print #text span {
+          color: #6e9b43; }
+        #print #text #text-inner {
+          position: absolute;
+          bottom: 0;
+          left: 0; }
+          #print #text #text-inner div {
+            margin-bottom: 5px; }
+      #print #printdirections {
+        clear: both;
+        display: block;
+        padding-top: 30px; }
+        #print #printdirections aside {
+          float: left;
+          margin-right: 50px;
+          width: 200px; }
+        #print #printdirections article {
+          float: left;
+          width: 400px; }
+          #print #printdirections article ol {
+            margin-left: 22px; }
+            #print #printdirections article ol li {
+              list-style-type: decimal; } }

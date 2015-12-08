@@ -1,0 +1,37 @@
+<ui-view>
+<div id="recipe-title" class="recipesPage"><div class="wrap"><a href="/farmvillecookbook-main/"><img src="/farmvillecookbook-main/public/images/back.png" /></a></div>{{category.categoryName}}</div>
+<div ng-hide="ismobile" class="wrap">
+    <div id="hero">
+        <a href="{{category.heroUrl}}"><img ng-src="/farmvillecookbook-main/public/images/categories/{{category.id}}.jpg" usemap="#Map"/></a>
+        <map name="Map">
+          <area shape="rect" coords="1067,204,1127,222" href="http://www.foodnetwork.com/chefs/marc-murphy/bio.html" target="_blank">
+        </map>
+    </div>
+</div>
+<div class="wrap" ng-switch="ismobile">
+    
+    <!-- mobile -->
+    <ul id="categories" ng-switch-when="true">
+        <li ng-repeat="recipe in recipes">
+            <a href="/farmvillecookbook-main/{{recipe.categoryId}}/{{recipe.id}}" ng-switch="recipe.swapMobileHeroImages">
+                <img ng-switch-when="true" ng-src="/farmvillecookbook-main/public/images/recipes/{{recipe.id}}/hero1-mobile.jpg" />
+                <img ng-switch-default ng-src="/farmvillecookbook-main/public/images/recipes/{{recipe.id}}/hero1.jpg" />
+                <h6>{{recipe.title}}</h6>
+            </a>
+        </li>
+    </ul>
+    <!-- desktop -->
+    <ul id="categories" ng-switch-default>
+        <li ng-repeat="recipe in recipes">
+            <a href="/farmvillecookbook-main/{{recipe.categoryId}}/{{recipe.id}}">
+                <div class="thumb-gallery" data-count="{{recipe.heroImageCount}}" thumbgallery>
+                    <img ng-repeat="n in range(1,recipe.heroImageCount)" ng-src="/farmvillecookbook-main/public/images/recipes/{{recipe.id}}/thumb{{n}}.jpg"> 
+
+                </div>
+                <h6>{{recipe.title}}</h6>
+            </a>
+        </li>
+    </ul>
+    
+</div>
+</ui-view>

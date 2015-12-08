@@ -1,0 +1,13 @@
+<div id="slideshow-wrap" ng-switch="recipe.swapMobileHeroImages && ismobile">
+    <ul ng-switch-when="true">
+        <li ng-repeat='i in getNumber(number) track by $index'>
+            <img ng-src="/farmvillecookbook-main/public/images/recipes/{{recipe.id}}/hero{{$index + 1}}-mobile.jpg"/>
+        </li>
+    </ul>
+    <ul ng-switch-default>
+        <li ng-repeat='i in getNumber(number) track by $index'>
+            <img ng-src="/farmvillecookbook-main/public/images/recipes/{{recipe.id}}/hero{{$index + 1}}.jpg"/>
+        </li>
+    </ul>
+
+</div>

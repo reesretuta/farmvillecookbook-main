@@ -1,0 +1,161 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en" ng-app="cookbookApp"> <!--<![endif]-->
+
+<head>
+    <base href="/" />
+    <meta charset="UTF-8">
+    <title>Farmville 2 Cookbook Preview</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- OG TAGS-->
+	 <meta property="og:title" content="FarmVille 2 Country Escape - Digital Cookbook"/>
+	 <meta property="og:type" content="website"/>
+	 <meta property="og:url" content="http://farmvilletotable.com"/>
+	 <meta property="og:image" content="http://farmvilletotable.com/public/images/fvtt-og.png" name="thumb" /> 
+	 <link rel="image_src" href="http://farmvilletotable.com/public/images/fvtt-og.png" />
+	 <meta property="og:site_name" content="FarmVille 2 Country Escape - Digital Cookbook"/>
+	 <meta property="og:description" content="FarmVille-To-Table digital cookbook."/>
+    
+    <link rel="stylesheet" href="/farmvillecookbook-main/public/css/reset.css?v=1">
+    <link rel="stylesheet" href="/farmvillecookbook-main/public/css/main.css?v=1">
+    <link rel="shortcut icon" href="/media/images/favicon.ico">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/farmvillecookbook-main/bower_components/angular/angular.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/farmvillecookbook-main/bower_components/angular-ui-router/release/angular-ui-router.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/farmvillecookbook-main/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="/farmvillecookbook-main/bower_components/underscore/underscore-min.js"></script>
+    
+    <!--<script type="text/javascript" async src="//platform.twitter.com/widgets.js"></script>-->
+    <!--<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>-->
+</head>
+
+
+<body resize>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '290788384458917',
+        xfbml      : true,
+        version    : 'v2.1'
+      });
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+    <header>
+        <a href="/farmvillecookbook-main/"><img id="logo" src="/farmvillecookbook-main/public/images/logo.png" /></a>
+        <div id="follow-wrap">
+            <ul id="follow">
+                <li><a href="https://www.facebook.com/FarmVille2" target="_blank"><img src="/farmvillecookbook-main/public/images/follow/fb.png" /></a></li>
+                <li><a href="https://twitter.com/farmville2" target="_blank"><img src="/farmvillecookbook-main/public/images/follow/twitter.png" /></a></li>
+                <li><a href="http://instagram.com/farmville_2" target="_blank"><img src="/farmvillecookbook-main/public/images/follow/instagram.png" /></a></li>
+                <li><a href="http://www.pinterest.com/zyngagames" target="_blank"><img src="/farmvillecookbook-main/public/images/follow/pinterest.png" /></a></li>
+            </ul>
+        </div>
+
+    </header>
+    <div ui-view>
+        
+    </div>
+    <footer>
+        
+        <div id="play-mobile">
+            <ul>
+                <li><a target="_blank" href="https://64424.api-01.com/serve?action=click&publisher_id=64424&site_id=52190&offer_id=283190&advertiser_sub_campaign=FM_1_1_emailz_259_ios_both_CPC_farmville-to-table"><img src="/farmvillecookbook-main/public/images/footer/ios.png" /></a></li>
+                <li><a target="_blank" href="https://64424.api-01.com/serve?action=click&publisher_id=64424&site_id=51908&offer_id=282640&advertiser_sub_campaign=FM_1_1_emailz_259_android_both_CPC_farmville-to-table
+Kindle -"><img src="/farmvillecookbook-main/public/images/footer/google.png" /></a></li>
+                <li><a target="_blank" href="https://64424.api-01.com/serve?action=click&publisher_id=64424&site_id=58650&offer_id=297846&advertiser_sub_campaign=FM_1_1_emailz_259_kindle_both_CPC_farmville-to-table
+"><img src="/farmvillecookbook-main/public/images/footer/kindle.png" /></a></li>
+                <!-- <li><a target="_blank" href=""><img src="/public/images/footer/windows.png" /></a></li> -->
+            </ul>
+        </div>
+        <div id="bottom-logo">
+            <div class="wrap">
+                <a target="_blank" href="http://zynga.com"><img id="zynga" src="/farmvillecookbook-main/public/images/footer/zynga.jpg" /></a>
+                <div id="privacy">
+                    <a target="_blank" href="https://company.zynga.com/privacy/policy">Privacy Policy</a>
+                    <a target="_blank" href="https://company.zynga.com/legal/terms-of-service">Terms of Service</a>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+    <!-- main content wrapper end -->
+
+    
+    <script src="//unslider.com/unslider.min.js"></script>
+    <script src="/farmvillecookbook-main/app/js/recipeData.js"></script>
+    <script src="/farmvillecookbook-main/app/js/app.js"></script>
+    <script src="/farmvillecookbook-main/app/js/controllers.js"></script>
+    <script src="/farmvillecookbook-main/app/js/directives.js"></script>
+    <script src="/farmvillecookbook-main/app/js/services.js"></script>
+    <script type="text/javascript">
+    
+      
+      
+      $(function(){
+         $('body').on('click','.fb',function(){
+             // var recipeTitle = $("#recipe-title").text();
+             // FB.ui({
+             //   method: 'feed',
+             //   link: 'http://farmvilletotable.com',
+             //   caption: recipeTitle,
+             //   picture: 'http://farmvilletotable.com/public/images/fvtt-og.png',
+             //   description: 'The world of FarmVille is all about creating fresh country recipes, and now you can bring them to your kitchen!'
+             // }, function(response){});
+         });
+         
+         $('body').on('click','.twitter',function(){
+             // var recipeTitle = $("#recipe-title").text();
+             // var url = encodeURIComponent('http://farmvilletotable.com'),
+             //     text = encodeURIComponent('Try this fresh country #fv2table recipe inspired by @FarmVille2!');
+             // var shareurl = 'http://twitter.com/intent/tweet?url='+url+"&text="+text;
+             // window.open(shareurl,'_blank',"width=600,height=400");
+         });
+         
+         // $('body').on('click','.pinterest',function(){
+         //     var recipeTitle = $("#recipe-title").text();
+         //     var url = encodeURIComponent('http://farmvilletotable.com'),
+         //     media = encodeURIComponent('http://farmvilletotable.com/public/images/fvtt-og.png'),
+         //     description= encodeURIComponent(recipeTitle + ' brought to you by FarmVille2: Country Escape. Find more at farmvilletotable.com! #fv2table');
+         //     var shareurl = 'http://www.pinterest.com/pin/create/button/?url='+url+"&media="+media+"&description="+description;
+         //     window.open(shareurl,'_blank',"width=600,height=400");
+         // });
+         
+         $('body').on('click','.email',function(){
+             // var recipeTitle = $("#recipe-title").text();
+             // var subject = encodeURIComponent('Check out this great recipe!');
+             // var body = encodeURIComponent(recipeTitle + ' brought to you by FarmVille 2: Country Escape. Find more at http://www.farmvilletotable.com!');
+             // window.location.href = "mailto:?&subject="+subject+"&body="+body;
+         });
+         
+      });
+    
+    </script>
+    
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      // ga('create', 'UA-54313019-2', 'auto');
+      // ga('send', 'pageview');
+
+    </script>
+</body>
+</html>    

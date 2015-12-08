@@ -1,0 +1,55 @@
+<div class="wrap">
+    <div ng-if="ismobile == true" id="hero">
+        <a href="/farmvillecookbook-main/small-bites/kate-hudson-fig"><img src="/farmvillecookbook-main/public/images/recipes/kate-hudson-fig/hero1-mobile.jpg"/></a>
+    </div>
+    <div ng-if="ismobile == false" id="hero">
+        <a href="/farmvillecookbook-main/small-bites/kate-hudson-fig"><img src="/farmvillecookbook-main/public/images/homepage/hero.jpg"/></a>
+    </div>
+</div>
+<div class="wrap">
+    <ul id="categories" class="homePage" ng-switch="ismobile">
+        <li>
+            <a href="/farmvillecookbook-main/small-bites">
+                <img ng-switch-when="true" src="/farmvillecookbook-main/public/images/categories/small-bites.jpg" />
+                <img ng-switch-default src="/farmvillecookbook-main/public/images/homepage/small-bites.jpg" />
+                <h6>Small Bites</h6>
+            </a>
+        </li>
+        <li>
+            <a href="/farmvillecookbook-main/afternoon-plates">
+            <img ng-switch-when="true" src="/farmvillecookbook-main/public/images/categories/afternoon-plates.jpg" />
+            <img ng-switch-default src="/farmvillecookbook-main/public/images/homepage/afternoon-plates.jpg" />
+            <h6>Afternoon Plates</h6>
+            </a>
+        </li>
+        <li class="last">
+            
+            <a href="/farmvillecookbook-main/evening-plates">
+            <img ng-switch-when="true" src="/farmvillecookbook-main/public/images/categories/evening-plates.jpg" />
+            <img ng-switch-default src="/farmvillecookbook-main/public/images/homepage/evening-plates.jpg" />
+            <h6>Evening Plates</h6>
+            </a>
+        </li>
+        <li>
+            <a href="/farmvillecookbook-main/sauces-spreads">
+            <img ng-switch-when="true" src="/farmvillecookbook-main/public/images/categories/sauces-spreads.jpg" />
+            <img ng-switch-default src="/farmvillecookbook-main/public/images/homepage/sauces-spreads.jpg" />
+            <h6>Sauces &amp; Spreads</h6>
+            </a>
+        </li>
+        <li>
+            <a href="/farmvillecookbook-main/baking-pastry">
+            <img ng-switch-when="true" src="/farmvillecookbook-main/public/images/categories/baking-pastry.jpg" />
+            <img ng-switch-default src="/farmvillecookbook-main/public/images/homepage/baking-pastry.jpg" />
+            <h6>Baking &amp; Pastry</h6>
+            </a>
+        </li>
+        <li class="last">
+            <a href="/farmvillecookbook-main/sweet-treats">
+            <img ng-switch-when="true" src="/farmvillecookbook-main/public/images/categories/sweet-treats.jpg" />
+            <img ng-switch-default src="/farmvillecookbook-main/public/images/homepage/sweet-treats.jpg" />
+            <h6>Sweet Treats</h6>
+            </a>
+        </li>
+    </ul>
+</div>
